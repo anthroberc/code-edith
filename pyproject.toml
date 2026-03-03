@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.scripts]
-edith-code = "index:main"
+code-edith = "index:main"
 
 [tool.setuptools]
 py-modules = ["index"]
