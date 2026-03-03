@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "code-edith"
-version = "1.1.0"
-description = "Modular AI Engineering Agent"
+version = "1.0.0"
+description = "CLI Based AI Agent"
 authors = [
-    { name="Nolan Stark" }
+    { name="Anthroberc Inc." }
 ]
 readme = "README.md"
 requires-python = ">=3.10"
@@ -19,11 +19,11 @@ dependencies = [
 ]
 
 [project.scripts]
-edith = "index:main"
+edith-code = "index:main"
 
 [tool.setuptools]
 py-modules = ["index"]
 packages = ["bin", "bin.helper", "bin.tool"]
 
 [tool.setuptools.package-data]
-"*" = ["*.json"]
+"*" = ["*.json", "*.txt"]
