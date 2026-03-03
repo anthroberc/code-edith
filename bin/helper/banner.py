@@ -1,0 +1,47 @@
+import os
+from rich.console import Console
+from rich.panel import Panel
+from rich.text import Text
+
+console = Console()
+
+CODE_ART = """\
+ ██████╗ ██████╗ ██████╗ ███████╗
+██╔════╝██╔═══██╗██╔══██╗██╔════╝
+██║     ██║   ██║██║  ██║█████╗  
+██║     ██║   ██║██║  ██║██╔══╝  
+╚██████╗╚██████╔╝██████╔╝███████╗
+ ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝"""
+
+EDITH_ART = """\
+███████╗██████╗ ██╗████████╗██╗  ██╗
+██╔════╝██╔══██╗██║╚══██╔══╝██║  ██║
+█████╗  ██║  ██║██║   ██║   ███████║
+██╔══╝  ██║  ██║██║   ██║   ██╔══██║
+███████╗██████╔╝██║   ██║   ██║  ██║
+╚══════╝╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝"""
+
+ORANGE_STYLE = "rgb(217,119,87)"
+GREY_STYLE = "rgb(128,128,128)"
+
+
+def banner():
+    os.system("cls" if os.name == "nt" else "clear")
+
+    console.print(
+        Panel(
+            Text("Welcome to Code Edith CLI", style="default"),
+            border_style=ORANGE_STYLE,
+            expand=False,
+        )
+    )
+
+    console.print(Text(CODE_ART, style=ORANGE_STYLE))
+    console.print()
+    console.print(Text(EDITH_ART, style=ORANGE_STYLE))
+    
+    # Styled > in RGB grey, no bold
+    help_text = Text(">", style=GREY_STYLE)
+    help_text.append(" Type /help for available commands.")
+    console.print(help_text)
+    print('\n')

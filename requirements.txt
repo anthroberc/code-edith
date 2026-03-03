@@ -1,0 +1,4 @@
+ddgs==9.10.0
+openai==2.24.0
+python-dotenv==1.2.1
+rich==14.3.3

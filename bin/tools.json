@@ -1,0 +1,81 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get_current_datetime",
+      "description": "Returns the current date and time in UTC format. Use this whenever the user asks for the time or when a precise timestamp is required.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "web_search",
+      "description": "Searches the internet for real-time information. Use this when you need up-to-date facts, news, or technical documentation.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The search keywords."
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_file",
+      "description": "Reads the content of a local file. Use this when the user asks you to read, analyze, or summarize code or text files.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "The relative or absolute path to the file."
+          }
+        },
+        "required": [
+          "path"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_dir",
+      "description": "Lists the files and folders in a specific directory. Use this to check project structure or find file names.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "The path to list. Use '.' for the current directory."
+          }
+        },
+        "required": [
+          "path"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_os_info",
+      "description": "Retrieves comprehensive information about the current operating system, hardware architecture, and Python environment. Use this to determine if the system is Linux, Windows, or macOS, and to check CPU core count or Python version for compatibility.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+]
