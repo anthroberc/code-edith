@@ -10,7 +10,7 @@ Code-Edith is a CLI (Command Line Interface) AI assistant written in Python.
 
 After installation, you start it using:
 
-    code-edith
+`code-edith`
 
 It runs in your terminal and allows you to chat with an AI model.
 It supports tools like:
