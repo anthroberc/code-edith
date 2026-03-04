@@ -1,8 +1,9 @@
 # Code-Edith (code-edith)
 
 ## 1. What It Is
-Code-Edith is a Python CLI AI assistant.  
-Run after install:
+Code-Edith is a privacy focused Python Local/Cloud AI Agent.
+
+After installation, run it directly:
 
     code-edith
 
@@ -16,16 +17,16 @@ Supports tool calling:
 
 ## 2. Requirements
 - Python 3.10+
-- pip
 - OpenAI-compatible API (cloud or local)
 
 
 ## 3. Installation
-    
-    cd Edith-Code
-    pip install .
 
-Run:
+Install using pip:
+
+    pip install code-edith
+
+After installation, start it with:
 
     code-edith
 
@@ -49,6 +50,7 @@ Important:
 - Minimum for cloud APIs:
     EDITH_API
     EDITH_MODEL
+    EDITH_URL
 
 Using Local Models (OpenAI-Compatible Servers):
 
@@ -57,7 +59,7 @@ Works with local servers like llama.cpp or any OpenAI-compatible endpoint.
 For local usage:
 - Only EDITH_URL is strictly required.
 - EDITH_API can be dummy or ignored (if server allows).
-- EDITH_MODEL depends on server requirements.
+- EDITH_MODEL depends on server requirements/any
 
 Example local config:
 
@@ -67,7 +69,7 @@ Example local config:
 
 Note:
 - Local models must support tool calling.
-- Models without tool calling support will not work correctly.
+- Models without tool calling support will not work correctly and will crash
 
 
 ## 5. CLI Commands
@@ -81,21 +83,8 @@ Inside app:
 Session memory:
 - Stored only during runtime
 - Cleared with /clear
-- History saved in ~/.edith_history
-
-
-## 6. Limitations
-
-- Requires API endpoint (cloud or local)
-- Terminal only (no GUI)
-- No persistent memory
-- Tool access depends on OS permissions
-- Local models must support tool calling
-
+- History saved in ~/.edith_history (only prompts sent by user)
 
 ## 7. Uninstall
 
     pip uninstall code-edith
-
-
-All Rights Reserved
