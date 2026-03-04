@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "code-edith"
 version = "1.0.2"
-description = "CLI Based AI Agent"
+description = "CLI Based Privacy Focused Local/Cloud AI Agent"
 authors = [
     { name="Anthroberc Inc." }
 ]
