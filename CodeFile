@@ -1,5 +1,5 @@
 ROOT_NAME code-edith
-CREATED_UTC 2026-03-04T12:22:13Z
+CREATED_UTC 2026-03-05T02:38:28Z
 TOTAL_SIZE_MB 0.02
 
 START_STRUCTURE
@@ -261,14 +261,14 @@ if __name__ == "__main__":
 
 FILE_END index.py b2268a99f3ac
 
-FILE_START pyproject.toml 16c6d452fcc8
+FILE_START pyproject.toml 7b64b659fb6a
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "code-edith"
-version = "1.0.2"
+version = "1.0.3"
 description = "CLI Based Privacy Focused Local/Cloud AI Agent"
 authors = [
     { name="Anthroberc Inc." }
@@ -292,7 +292,7 @@ packages = ["bin", "bin.helper", "bin.tool"]
 [tool.setuptools.package-data]
 "*" = ["*.json", "*.txt"]
 
-FILE_END pyproject.toml 16c6d452fcc8
+FILE_END pyproject.toml 7b64b659fb6a
 
 FILE_START requirements.txt 9ec7aba36419
 ddgs==9.10.0
