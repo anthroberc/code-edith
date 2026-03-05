@@ -3,7 +3,7 @@
     "type": "function",
     "function": {
       "name": "get_current_datetime",
-      "description": "Returns the current date and time in UTC format. Use this whenever the user asks for the time or when a precise timestamp is required.",
+      "description": "Returns the exact current date and time in UTC. Trigger this when you need the current time, today's date, or a precise timestamp to answer the user.",
       "parameters": {
         "type": "object",
         "properties": {}
@@ -14,7 +14,7 @@
     "type": "function",
     "function": {
       "name": "web_search",
-      "description": "Searches the internet for real-time information. Use this when you need up-to-date facts, news, or technical documentation.",
+      "description": "Executes an internet search to retrieve real-time data. Use this to find current events, up-to-date facts, or external technical documentation not present in your training data.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -33,7 +33,7 @@
     "type": "function",
     "function": {
       "name": "read_file",
-      "description": "Reads the content of a local file. Use this when the user asks you to read, analyze, or summarize code or text files.",
+      "description": "Reads and returns the exact text content of a specified local file. Use this immediately when asked to inspect, analyze, debug, or summarize a specific file.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -52,7 +52,7 @@
     "type": "function",
     "function": {
       "name": "list_dir",
-      "description": "Lists the files and folders in a specific directory. Use this to check project structure or find file names.",
+      "description": "Returns a list of all files and folders within a given directory. Use this to inspect project structures, verify file existence, or explore the local file system.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -71,7 +71,7 @@
     "type": "function",
     "function": {
       "name": "get_os_info",
-      "description": "Retrieves comprehensive information about the current operating system, hardware architecture, and Python environment. Use this to determine if the system is Linux, Windows, or macOS, and to check CPU core count or Python version for compatibility.",
+      "description": "Retrieves system environment details including OS type (Windows/Linux/macOS), CPU architecture, and Python version. Use this to diagnose environment context or hardware capabilities.",
       "parameters": {
         "type": "object",
         "properties": {}
